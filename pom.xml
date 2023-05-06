@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.interthedungeon</groupId>
     <artifactId>connection-factory</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
   <properties>
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
@@ -52,6 +52,12 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>jakarta.enterprise</groupId>
+    <artifactId>jakarta.enterprise.cdi-api</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
   </dependencies>
   <build>
     <plugins>

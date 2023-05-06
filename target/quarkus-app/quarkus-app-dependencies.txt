@@ -80,8 +80,7 @@ io.vertx:vertx-web::jar:4.4.1
 jakarta.activation:jakarta.activation-api::jar:2.1.1
 jakarta.annotation:jakarta.annotation-api::jar:2.1.1
 jakarta.el:jakarta.el-api::jar:5.0.1
-jakarta.enterprise:jakarta.enterprise.cdi-api::jar:4.0.1
-jakarta.enterprise:jakarta.enterprise.lang-model::jar:4.0.1
+jakarta.enterprise:jakarta.enterprise.cdi-api::jar:3.0.0
 jakarta.inject:jakarta.inject-api::jar:2.0.1
 jakarta.interceptor:jakarta.interceptor-api::jar:2.1.0
 jakarta.json:jakarta.json-api::jar:2.1.1
