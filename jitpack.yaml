@@ -1,5 +1,5 @@
 jdk:
-  - openjdk11
+  - openjdk19
 before_install:
   - sdk install maven
   - mvn -v

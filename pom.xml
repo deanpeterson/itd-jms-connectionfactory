@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.interthedungeon</groupId>
     <artifactId>connection-factory</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
     <packaging>jar</packaging>
   <properties>
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
