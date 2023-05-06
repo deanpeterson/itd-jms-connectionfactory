@@ -1,24 +1,28 @@
 package com.interthedungeon;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
+import javax.inject.Inject;
 import javax.jms.ConnectionFactory;
 import org.apache.qpid.jms.JmsConnectionFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-@Configuration
+@ApplicationScoped
 public class ConnectionFactoryConfiguration {
 
-    @Value("${remoteURI}")
+    @Inject
+    @ConfigProperty(name = "remoteURI")
     private String remoteURI;
 
-    @Value("${username}")
+    @Inject
+    @ConfigProperty(name = "username")
     private String username;
 
-    @Value("${password}")
+    @Inject
+    @ConfigProperty(name = "password")
     private String password;
 
-    @Bean
+    @Produces
     public ConnectionFactory connectionFactory() {
         JmsConnectionFactory connectionFactory = new JmsConnectionFactory();
         connectionFactory.setRemoteURI(remoteURI);
